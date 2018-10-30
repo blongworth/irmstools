@@ -2,6 +2,7 @@
 
 # Script to convert IRMS output files to db input format.
 # Will pick correct system based on first char of file name
+# Requires csvkit
 
 a=$(basename $1)
 if [ "${a:0:1}"  == "P" ]
